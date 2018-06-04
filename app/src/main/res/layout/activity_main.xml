@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/login_bg"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:background="#00f"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/daochu"
+            android:text="导出"
+            android:layout_toLeftOf="@+id/img"
+            android:layout_width="40dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textColor="#fff"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/ic_menu_compose" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/serach"
+        android:hint="输入查询内容"
+        android:layout_width="match_parent"
+        android:textColor="#fff"
+        android:layout_below="@+id/title"
+        android:layout_height="40dp" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#f00"
+        android:dividerHeight="1dp"
+        android:layout_below="@+id/serach"></ListView>
+
+</RelativeLayout>
